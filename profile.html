@@ -1,5 +1,5 @@
-<html>
-
+<!doctype html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -48,59 +48,48 @@
 
         </div>
     </nav>
-    <div class="container mt-5">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="card">
-                    <div class="card-header">Login</div>
+    <section class="profile mt-5">
+        <div class="container d-flex flex-column align-items-center">
+            <div class="profile_picture w-100 d-flex justify-content-center">
+                <img src="images/defult_male.png" alt="..." class="img-thumbnail profile_picture image-preview">
+            </div>
+            <h3 class="email mt-2 mb-2">example@email.com</h3>
+            <div class="row">
+                <div class="col">
+                    <div class="form">
+                        <form method="post" action="">
 
-                    <div class="card-body">
-                        <form>
-
-
-                            <div class="form-group row">
-                                <label for="email" class="col-md-4 col-form-label text-md-right">Email</label>
-
-                                <div class="col-md-6">
-                                    <input id="email" type="email" class="form-control " name="email" required autocomplete="email" autofocus>
-
-                                </div>
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" name="name" class="form-control" id="name" placeholder="Enter your name...">
                             </div>
 
-                            <div class="form-group row">
-                                <label for="password" class="col-md-4 col-form-label text-md-right">Password</label>
-
-                                <div class="col-md-6">
-                                    <input id="password" type="password" class="form-control" name="password" required autocomplete="current-password">
-
-                                </div>
+                            <div class="form-group">
+                                <label for="mobile">Mobile</label>
+                                <input type="text" name="mobile" class="form-control" id="mobile" placeholder="Enter your Mobile...">
                             </div>
 
-                            <div class="form-group row">
-                                <div class="col-md-6 offset-md-4">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" name="remember" id="remember">
-
-                                        <label class="form-check-label" for="remember">
-                                        Remember me
-                                    </label>
-                                    </div>
-                                </div>
+                            <div class="form-group">
+                                <label for="address">Address</label>
+                                <input type="text" name="address" class="form-control" id="address" placeholder="Enter your address...">
                             </div>
 
-                            <div class="form-group row mb-0">
-                                <div class="col-md-8 offset-md-4">
-                                    <button type="submit" class="btn btn-primary">
-                                    Login
-                                </button>
-                                </div>
+                            <div class="form-group">
+                                <label for="profilePicture">Update Profile Picture</label>
+                                <input type="file" name="profile_picture" class="form-control-file image" id="profilePicture">
                             </div>
+
+
+                            <button type="submit" class="btn btn-primary w-100 mt-4">Update</button>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+    <script src="lib/popper.js"></script>
+    <script src="lib/bootstrap.js"></script>
+
 </body>
 
 </html>
